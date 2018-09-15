@@ -15,20 +15,20 @@ namespace Services
             
         }
         
-         public int WithdrawCalculateback(int total,int payment)
+         public int[] WithdrawCalculateback(int total,int payment)
         {
             var sum = payment - total;
             int amount = 0;
-            int[] result = new int[8];
+            int[] result = new int[9];
             
-            if (payment / 1000 != 0)
+            if (sum / 1000 != 0)
             {
                 amount = payment / 1000;
                 payment = payment % 1000;
                 result[0] = amount;
             }
 
-            if (payment / 500 != 0)
+            if (sum / 500 != 0)
             {
                 amount = payment / 500;
                 payment = payment % 500;
@@ -36,7 +36,7 @@ namespace Services
 
             }
 
-            if (payment / 100 != 0)
+            if (sum / 100 != 0)
             {
                 amount = payment / 100;
                 payment = payment % 100;
@@ -44,7 +44,7 @@ namespace Services
 
             }
 
-            if (payment / 50 != 0)
+            if (sum / 50 != 0)
             {
                 amount = payment / 50;
                 payment = payment % 50;
@@ -52,7 +52,7 @@ namespace Services
 
             }
 
-            if (payment / 20 != 0)
+            if (sum / 20 != 0)
             {
                 amount = payment / 20;
                 payment = payment % 20;
@@ -60,7 +60,7 @@ namespace Services
 
             }
 
-            if (payment / 10 != 0)
+            if (sum / 10 != 0)
             {
                 amount = payment / 10;
                 payment = payment % 10;
@@ -68,7 +68,7 @@ namespace Services
 
             }
 
-            if (payment / 5 != 0)
+            if (sum / 5 != 0)
             {
                 amount = payment / 5;
                 payment = payment % 5;
@@ -76,7 +76,7 @@ namespace Services
 
             }
 
-            if (payment / 2 != 0)
+            if (sum / 2 != 0)
             {
                 amount = payment / 2;
                 payment = payment % 2;
@@ -84,7 +84,7 @@ namespace Services
 
             }
 
-            if (payment / 1 != 0)
+            if (sum / 1 != 0)
             {
                 amount = payment / 1;
                 payment = payment % 1;
@@ -92,18 +92,16 @@ namespace Services
                 
             }
 
-            if (payment==total)
-            {
-                return 0;
-
-            }
-
-            foreach (int data in result)
-            {
-                return(data);
-            }
+//            if (payment==total)
+//            {
+//                return 0;
+//
+//            }
             
-            return sum;
+            return result;
+
+           
+            
             
         }
         
