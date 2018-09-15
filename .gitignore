@@ -295,3 +295,13 @@ __pycache__/
 /promome/TheS.Promome.Backend.Api/summary.xml
 /promome/TheS.Promome.Client.Api/summary.xml
 /promome/TheS.Promome.Web/summary.xml
+/EZ.Lunch.Mobile/www/build/0.js.map
+/EZ.Lunch.Mobile/www/build/1.js.map
+/EZ.Lunch.Mobile/www/build/2.js.map
+/EZ.Lunch.Mobile/www/build/main.css
+/EZ.Lunch.Mobile/www/build/main.css.map
+/EZ.Lunch.Mobile/www/
+
+#Code anywhere deb file
+*.deb
+*.deb.1
