@@ -1,14 +1,28 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Consecutive
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-item>
+    <ion-label fixed>ใส่ตัวเลขนาจา</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+  <button ion-button block (click)="presentLoadingText()">Default</button>
+  
+  
+ <ion-list>
+  <label text-center>
+    A
+  </label> <br>
+   <label >
+    A
+  </label> <br>
+   <label >
+    A
+  </label> 
+</ion-list>
 </ion-content>
