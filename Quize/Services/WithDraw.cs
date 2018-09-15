@@ -23,71 +23,71 @@ namespace Services
             
             if (sum / 1000 != 0)
             {
-                amount = payment / 1000;
-                payment = payment % 1000;
+                amount = sum / 1000;
+                sum = sum % 1000;
                 result[0] = amount;
             }
 
             if (sum / 500 != 0)
             {
-                amount = payment / 500;
-                payment = payment % 500;
+                amount = sum / 500;
+                sum = sum % 500;
                 result[1] = amount;
 
             }
 
             if (sum / 100 != 0)
             {
-                amount = payment / 100;
-                payment = payment % 100;
+                amount = sum / 100;
+                sum = sum % 100;
                 result[2] = amount;
 
             }
 
             if (sum / 50 != 0)
             {
-                amount = payment / 50;
-                payment = payment % 50;
+                amount = sum / 50;
+                sum = sum % 50;
                 result[3] = amount;
 
             }
 
             if (sum / 20 != 0)
             {
-                amount = payment / 20;
-                payment = payment % 20;
+                amount = sum / 20;
+                sum = sum % 20;
                 result[4] = amount;
 
             }
 
             if (sum / 10 != 0)
             {
-                amount = payment / 10;
-                payment = payment % 10;
+                amount = sum / 10;
+                sum = sum % 10;
                 result[5] = amount;
 
             }
 
             if (sum / 5 != 0)
             {
-                amount = payment / 5;
-                payment = payment % 5;
+                amount = sum / 5;
+                sum = sum % 5;
                 result[6] = amount;
 
             }
 
             if (sum / 2 != 0)
             {
-                amount = payment / 2;
-                payment = payment % 2;
+                amount = sum / 2;
+                sum = sum % 2;
                 result[7] = amount;
 
             }
 
             if (sum / 1 != 0)
             {
-                amount = payment / 1;
-                payment = payment % 1;
+                amount = sum / 1;
+                sum = sum % 1;
                 result[8] = amount;
                 
             }

@@ -29,12 +29,15 @@ namespace Tests
         
         [Theory]
         [InlineData (1500, 2000,new int[]{0,1,0,0,0,0,0,0,0})]
+        [InlineData (3500, 5000,new int[]{1,1,0,0,0,0,0,0,0})]
+        [InlineData (450, 850,new int[]{0,0,4,0,0,0,0,0,0})]
        public void TestWithDrawbank(int total,int payment ,int[] bank)
        {
            svc = new WithDraw();
            var result = svc.WithdrawCalculateback(total,payment);           
            Assert.Equal(bank,result);
         }
+        cd ..
         
         
     }
