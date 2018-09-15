@@ -9,20 +9,14 @@
 <ion-content padding>
 <ion-item>
     <ion-label fixed>ใส่ตัวเลขนาจา</ion-label>
-    <ion-input type="text" value=""></ion-input>
+    <ion-input type="text" [(ngModel)]="sumnumber"></ion-input>
   </ion-item>
-  <button ion-button block (click)="presentLoadingText()">Default</button>
+  <button ion-button block (click)="click()">Default</button>
   
   
  <ion-list>
-  <label text-center>
-    A
+  <label   *ngFor="let item of numberresual">
+    {{item}}
   </label> <br>
-   <label >
-    A
-  </label> <br>
-   <label >
-    A
-  </label> 
 </ion-list>
 </ion-content>
